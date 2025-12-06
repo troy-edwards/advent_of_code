@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn sum_power_banks(bank_strings: Vec<String>) -> u128 {
     let sum: u128 = bank_strings
         .iter()

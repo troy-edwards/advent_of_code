@@ -1,0 +1,1 @@
+Map<std::str::Split<'_, &str>, for<'a> fn(&'a String) -> String {<String as ToString>::to_string}>
