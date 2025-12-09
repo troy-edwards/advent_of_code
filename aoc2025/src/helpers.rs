@@ -6,5 +6,5 @@ pub fn get_file_separated_or_panic(file_name: &str, sep: &str) -> Vec<String> {
     let mut file_contents = String::new();
     file.read_to_string(&mut file_contents)
         .expect("File could not be read.");
-    file_contents.split(sep).map(|e| e.to_string()).collect()
+    file_contents.split(sep).map(|e| e.trim_end_matches('\r').to_string()).collect()
 }
